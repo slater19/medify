@@ -1,26 +1,28 @@
 import React from 'react'
 import { Container , Box, Typography ,  } from "@mui/material";
-import Grid from '@mui/material/Grid2';
-import img from '../../../assets/card_service.png';
+import Grid from '@mui/material/Grid';
+import img from '../../../assets/div.elementor-widget-wrap.png'
 
 const OurFamilies = () => {
   return (
-    <Box  pt={3} sx={{  borderRadius:"250px 240px 4px 4px"}}>
+    <Box  pt={3} sx={{ background:'linear-gradient(#E7F0FF,#E8F1FF)'}}>
       
         <Container>
-      <Grid container spacing={{xs:2,md:10}}>
-      <Grid item xs={12} md={6}>
-      <Typography component="h4" fontSize={20} color='#1B3C74' fontWeight={500} textAlign="center" mb={2}>My Bookings</Typography>      
+      <Grid container alignItems={"center"} spacing={{xs:2,md:1}}>
+      <Grid item xs={12} md={4}>
+      <Typography  color='#2AA7FF' fontWeight={600} >CARING FOR THE HEALTH OF YOU AND YOUR FAMILY.</Typography>  
       
-      <Typography component="h4" fontSize={20} color='#1B3C74' fontWeight={500} textAlign="center" mb={2}>My Bookings</Typography>      
-      <Typography variant="h3"  mb={2} >Patients<Box component='span' color="#fff" />No Bookings </Typography> 
-      <Typography component="h4" fontSize={20} color='#1B3C74' fontWeight={500} textAlign="center" mb={2}>My Bookings</Typography>      
+          
+      <Typography variant="h2"  >Our Families </Typography> 
+      <Typography lineHeight={1.8} color='#77829D' fontWeight={500} textAlign="center" mb={2}>We will work with you to develop individualised care plans, including management of chronic diseases. If we cannot assist, we can provide referrals or advice about the type of practitioner you require. We treat all enquiries sensitively and in the strictest confidence.</Typography>      
       </Grid>
-      <Grid item xs={12} md={6}>
-      <Box component='img' src={img} width={1} mb={0.5}   sx={{  borderRadius:"250px 240px 4px 4px"}}/>
+      <Grid item xs={12} md={4}>
+      <Box component='img' src={img} width={1} height="auto"/>
 
 
-      </Grid></Grid></Container></Box>
+      </Grid></Grid>
+      </Container>
+      </Box>
 
   )
 }

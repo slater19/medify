@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button,Typography,Container,Box} from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import SpecializationCard from './SpecializationCard';
 import icon1 from '../../../assets/Blood Sample.png';
 import icon2 from '../../../assets/Drugstore(1).png';
@@ -47,25 +47,20 @@ const Specialization = () => {
 
 },{
   img: icon5,
-  title:"Dentistry1"
+  title:"Drugstore"
   
 
 },
 {
   img: icon6,
-  title:"Dentistry5"
+  title:"Cardiology"
   
 
 },
-{
-  img: icon7,
-  title:"Dentistry2"
-  
 
-},
 {
   img: icon8,
-  title:"Dentistry3"
+  title:"Piscologist"
   
 
 },

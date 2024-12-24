@@ -31,7 +31,7 @@ const HeroServices = () => {
   <IconCard
   img={Service.img}
   title={Service.title}
-  bgColor="#1B3C74"
+  bgColor="#FAFBFE"
   />
   </Grid>
   ))}

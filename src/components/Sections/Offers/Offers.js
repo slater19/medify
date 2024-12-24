@@ -1,12 +1,16 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 import {Button,Typography,Container,Box} from '@mui/material';
-import SwiperCore, { Pagination } from "swiper/core";
-import Grid from '@mui/material/Grid2';
 
-import Offers1 from '../../../assets/kindpng_1018785 1.png';
-import Offers2 from '../../../assets/kindpng_1018785 1.png';
+
+import { Pagination } from 'swiper/modules';
+
+
+import Offers1 from '../../../assets/image 1(1).png'
+import Offers2 from '../../../assets/image 1.png'
+
 
 
 
@@ -16,23 +20,23 @@ const Offers = () => {
     <Box py={6}>
       <Container maxWidth="xl">
       <Swiper
-      spaceBetween={30}
-      slidesPerView={1}
-      pagination={{
-        clickable: true
-      }}
-      breakpoints={{
-        
-            
+                  
+                  spaceBetween={30}
+                  slidesPerView={1}
+                  modules={[Pagination]}
+                  
+                  pagination={{clickable:true}} 
+                   
 
-            767: {
-                slidesPerView: 3,
+                  breakpoints={{
+                    
+                    767: { 
+                            slidesPerView: 3
+                            
+                        }}}
+            
+                           >
                 
-            }}}
-                    className="mySwiper"
-      
-      
-    >
       
       
         <SwiperSlide>
@@ -43,8 +47,26 @@ const Offers = () => {
          <SwiperSlide>
          
             
+         <Box component="img" src={Offers2}         />
+         </SwiperSlide>   
+         <SwiperSlide>
+         
+            
          <Box component="img" src={Offers1}         />
          </SwiperSlide>   
+         <SwiperSlide>
+         
+            
+         <Box component="img" src={Offers2}         />
+         </SwiperSlide>   
+         <Box component="img" src={Offers1}         />
+         
+         <SwiperSlide>
+         
+            
+         <Box component="img" src={Offers2}         />
+         </SwiperSlide>  
+         
 
          </Swiper>
          

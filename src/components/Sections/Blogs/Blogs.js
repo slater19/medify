@@ -1,23 +1,24 @@
 import React from 'react'
-// import BlogCard from '../../HospitalCard/HospitalCard';
-import {Container,Box,Grid,Typography} from "@mui/material";
+import BlogCard from './BlogCard';
+import {Container,Box,Typography} from "@mui/material";
+import Grid from '@mui/material/Grid2';
 
 const Blogs = () => {
   return (
     <Box py={6} >
         <Container>
-        <Typography fontWeight={300} color="#1B3C74" textAlign ="center">Blogs</Typography>
-        <Typography variant="h3"  mb={2} px={3}textAlign ="center">News</Typography>
-        <Grid container spacing={5} >
-        <Grid item xs={12} md={6}>
+        <Typography fontWeight={600} color="#2AA7FF" textAlign ="center">Blogs & News</Typography>
+        <Typography variant="h2"  mb={2} textAlign ="center">Read Our News</Typography>
+        <Grid container spacing={3} >
+        <Grid item xs={12} md={4}>
 
-        {/* <BlogCard/>  */}
+        <BlogCard/> 
         </Grid>
-        <Grid item xs={12} md={6}>
-        {/* <BlogCard/>  */}
+        <Grid item xs={12} md={4}>
+        <BlogCard/> 
         </Grid>
-        <Grid item xs={12} md={6}>
-        {/* <BlogCard/>  */}
+        <Grid item xs={12} md={4}>
+        <BlogCard/> 
         </Grid></Grid>
         </Container>
         </Box>

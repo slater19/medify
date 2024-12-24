@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-
+import "swiper/css";
 
 
 import {Button,Typography,Container,Box} from '@mui/material';
@@ -15,8 +15,8 @@ const Specialists = () => {
   const Specialists_Icons=[
     {
       img: icon1,
-        title:"Dr. Ankur Sharma",
-        designation:"Medicine" 
+        title:"Dr. Ahmad Khan",
+        designation:"Neurologist" 
 
     },
     {
@@ -25,33 +25,28 @@ const Specialists = () => {
         designation:"Medicine" 
 
     },
+    
     {
       img: icon1,
-        title:"Dr. Ankur Sharma",
+        title:"Dr. Lesley Hull",
         designation:"Medicine" 
 
     },
     {
       img: icon1,
-        title:"Dr. Ankur Sharma",
-        designation:"Medicine" 
+        title:"Dr. Ahmad Stevens",
+        designation:"Neurologist" 
 
     },
     {
       img: icon1,
-        title:"Dr. Ankur Sharma",
-        designation:"Medicine" 
+        title:"Dr. Heena Sachdeva",
+        designation:"Orthopadics" 
 
     },
     {
       img: icon1,
-        title:"Dr. Ankur Sharma",
-        designation:"Medicine" 
-
-    },
-    {
-      img: icon1,
-        title:"Dr. Ankur Sharma",
+        title:"Dr. Lesley Hull",
         designation:"Medicine" 
 
     },
@@ -76,7 +71,7 @@ const Specialists = () => {
 
   return (
     <Box py={4} id="find-doc" >
-    <Typography variant="h2"  mb={3} px={2} textAlign ="center">Specialist</Typography>
+    <Typography variant="h2"  mb={3} px={2} textAlign ="center">Our Medical Specialist</Typography>
     
     <Swiper
                   

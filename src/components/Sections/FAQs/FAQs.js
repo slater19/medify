@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container , Box,Typography, autocompleteClasses } from "@mui/material";
 import Grid from '@mui/material/Grid2';
-import img from '../../../assets/image 1.png';
+import img from '../../../assets/Image-21-1.png.png'
 
 const FAQs = () => {
 
